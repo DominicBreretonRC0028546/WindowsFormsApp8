@@ -57,6 +57,7 @@ namespace WindowsFormsApp8
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //write something there
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = "csv Files|*.csv";
             DialogResult result = openFileDialog1.ShowDialog();
@@ -72,7 +73,7 @@ namespace WindowsFormsApp8
                             table.Add(new row());
                             String[] r = sr.ReadLine().Split(',');
                             table.Last().time = double.Parse(r[0]);
-                            table.Last().altitude = double.Parse(r[1]);
+                            table.Last().altitude = double.Parse(r[1]); 
                         }
                     }
                     calculateVelocity();

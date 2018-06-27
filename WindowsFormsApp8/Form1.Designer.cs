@@ -32,16 +32,16 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.savePNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.graphToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.velocityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accelerationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altitudeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.saveCSVToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.savePNGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -58,10 +58,6 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -69,8 +65,8 @@
             this.saveCSVToolStripMenuItem,
             this.savePNGToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(25, 20);
+            this.fileToolStripMenuItem.Text = "  ";
             // 
             // openToolStripMenuItem
             // 
@@ -78,6 +74,20 @@
             this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            // 
+            // saveCSVToolStripMenuItem
+            // 
+            this.saveCSVToolStripMenuItem.Name = "saveCSVToolStripMenuItem";
+            this.saveCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveCSVToolStripMenuItem.Text = "Save CSV";
+            this.saveCSVToolStripMenuItem.Click += new System.EventHandler(this.saveCSVToolStripMenuItem_Click);
+            // 
+            // savePNGToolStripMenuItem
+            // 
+            this.savePNGToolStripMenuItem.Name = "savePNGToolStripMenuItem";
+            this.savePNGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.savePNGToolStripMenuItem.Text = "Save PNG";
+            this.savePNGToolStripMenuItem.Click += new System.EventHandler(this.savePNGToolStripMenuItem_Click);
             // 
             // graphToolStripMenuItem
             // 
@@ -110,6 +120,10 @@
             this.altitudeToolStripMenuItem.Text = "Altitude";
             this.altitudeToolStripMenuItem.Click += new System.EventHandler(this.altitudeToolStripMenuItem_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // chart1
             // 
             chartArea1.Name = "ChartArea1";
@@ -125,20 +139,6 @@
             this.chart1.Size = new System.Drawing.Size(658, 402);
             this.chart1.TabIndex = 1;
             this.chart1.Text = "chart1";
-            // 
-            // saveCSVToolStripMenuItem
-            // 
-            this.saveCSVToolStripMenuItem.Name = "saveCSVToolStripMenuItem";
-            this.saveCSVToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saveCSVToolStripMenuItem.Text = "Save CSV";
-            this.saveCSVToolStripMenuItem.Click += new System.EventHandler(this.saveCSVToolStripMenuItem_Click);
-            // 
-            // savePNGToolStripMenuItem
-            // 
-            this.savePNGToolStripMenuItem.Name = "savePNGToolStripMenuItem";
-            this.savePNGToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.savePNGToolStripMenuItem.Text = "Save PNG";
-            this.savePNGToolStripMenuItem.Click += new System.EventHandler(this.savePNGToolStripMenuItem_Click);
             // 
             // Form1
             // 
